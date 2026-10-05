@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biblioteca Digital</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header id="inicio">
+
+        <div class="contenedor header">
+
+            <a href="#inicio" class="logo">
+                BIBLIOTECA
+            </a>
+
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#categorias">Categorías</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <a href="#catalogo" class="boton">
+                Ver libros
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero contenedor">
+
+            <div class="hero-text">
+
+                <h1>
+                    Descubre nuevos
+                    <br>
+                    mundos en los libros
+                </h1>
+
+                <p>
+                    Explora nuestra biblioteca, encuentra tus libros
+                    favoritos y descubre nuevas historias para aprender,
+                    imaginar y disfrutar.
+                </p>
+
+                <a href="#catalogo" class="boton">
+                    Ver catálogo
+                </a>
+
+            </div>
+
+
+            <div class="hero-imagen">
+
+                <!-- CAMBIA LA DIRECCIÓN DE ESTA IMAGEN -->
+
+                <img
+                    src="biblioteca.jpg"
+                    alt="Biblioteca"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORÍAS ================= -->
+
+        <section id="categorias" class="seccion contenedor">
+
+            <div class="titulo-seccion">
+
+                <h2>CATEGORÍAS</h2>
+
+                <p>
+                    Encuentra libros de diferentes temas
+                </p>
+
+            </div>
+
+
+            <div class="categorias">
+
+
+                <article class="categoria">
+
+                    <div class="icono">
+                        📚
+                    </div>
+
+                    <h3>
+                        Literatura
+                    </h3>
+
+                    <p>
+                        Novelas, cuentos y poesía.
+                    </p>
+
+                    <button
+                        onclick="mostrarCategoria('Literatura')"
+                    >
+                        Ver categoría
+                    </button>
+
+                </article>
+
+
+                <article class="categoria">
+
+                    <div class="icono">
+                        🔬
+                    </div>
+
+                    <h3>
+                        Ciencia
+                    </h3>
+
+                    <p>
+                        Ciencia, tecnología e investigación.
+                    </p>
+
+                    <button
+                        onclick="mostrarCategoria('Ciencia')"
+                    >
+                        Ver categoría
+                    </button>
+
+                </article>
+
+
+                <article class="categoria">
+
+                    <div class="icono">
+                        🌎
+                    </div>
+
+                    <h3>
+                        Historia
+                    </h3>
+
+                    <p>
+                        Historia de México y del mundo.
+                    </p>
+
+                    <button
+                        onclick="mostrarCategoria('Historia')"
+                    >
+                        Ver categoría
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATÁLOGO ================= -->
+
+        <section id="catalogo" class="seccion contenedor">
+
+            <div class="titulo-seccion">
+
+                <h2>CATÁLOGO</h2>
+
+                <p>
+                    Libros disponibles en nuestra biblioteca
+                </p>
+
+            </div>
+
+
+            <!-- BUSCADOR -->
+
+            <div class="buscador-contenedor">
+
+                <input
+                    type="text"
+                    id="buscador"
+                    placeholder="Buscar un libro..."
+                >
+
+            </div>
+
+
+            <div class="catalogo">
+
+
+                <!-- LIBRO 1 -->
+
+                <article
+                    class="libro"
+                    data-nombre="El Principito"
+                >
+
+                    <img
+                        src="princi.jpg"
+                        alt="El Principito"
+                    >
+
+                    <div class="libro-info">
+
+                        <h3>
+                            El Principito
+                        </h3>
+
+                        <p>
+                            Antoine de Saint-Exupéry
+                        </p>
+
+                        <button
+                            onclick="verLibro('El Principito')"
+                        >
+                            Ver libro
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LIBRO 2 -->
+
+                <article
+                    class="libro"
+                    data-nombre="Cien años de soledad"
+                >
+
+                    <img
+                        src="cien.jpg"
+                        alt="Cien años de soledad"
+                    >
+
+                    <div class="libro-info">
+
+                        <h3>
+                            Cien años de soledad
+                        </h3>
+
+                        <p>
+                            Gabriel García Márquez
+                        </p>
+
+                        <button
+                            onclick="verLibro('Cien años de soledad')"
+                        >
+                            Ver libro
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LIBRO 3 -->
+
+                <article
+                    class="libro"
+                    data-nombre="Don Quijote de la Mancha"
+                >
+
+                    <img
+                        src="quijo.jpg"
+                        alt="Don Quijote de la Mancha"
+                    >
+
+                    <div class="libro-info">
+
+                        <h3>
+                            Don Quijote de la Mancha
+                        </h3>
+
+                        <p>
+                            Miguel de Cervantes
+                        </p>
+
+                        <button
+                            onclick="verLibro('Don Quijote de la Mancha')"
+                        >
+                            Ver libro
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LIBRO 4 -->
+
+                <article
+                    class="libro"
+                    data-nombre="La Odisea"
+                >
+
+                    <img
+                        src="odio.jpg"
+                        alt="La Odisea"
+                    >
+
+                    <div class="libro-info">
+
+                        <h3>
+                            La Odisea
+                        </h3>
+
+                        <p>
+                            Homero
+                        </p>
+
+                        <button
+                            onclick="verLibro('La Odisea')"
+                        >
+                            Ver libro
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LIBRO 5 -->
+
+                <article
+                    class="libro"
+                    data-nombre="1984"
+                >
+
+                    <img
+                        src="12.jpg"
+                        alt="1984"
+                    >
+
+                    <div class="libro-info">
+
+                        <h3>
+                            1984
+                        </h3>
+
+                        <p>
+                            George Orwell
+                        </p>
+
+                        <button
+                            onclick="verLibro('1984')"
+                        >
+                            Ver libro
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LIBRO 6 -->
+
+                <article
+                    class="libro"
+                    data-nombre="El Principio de la Ciencia"
+                >
+
+                    <img
+                        src="13.jpg"
+                        alt="Libro de ciencia"
+                    >
+
+                    <div class="libro-info">
+
+                        <h3>
+                            Ciencia y Tecnología
+                        </h3>
+
+                        <p>
+                            Biblioteca de Ciencia
+                        </p>
+
+                        <button
+                            onclick="verLibro('Ciencia y Tecnología')"
+                        >
+                            Ver libro
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LIBRO 7 -->
+
+                <article
+                    class="libro"
+                    data-nombre="Historia de México"
+                >
+
+                    <img
+                        src="historia.jpg"
+                        alt="Historia de México"
+                    >
+
+                    <div class="libro-info">
+
+                        <h3>
+                            Historia de México
+                        </h3>
+
+                        <p>
+                            Historia
+                        </p>
+
+                        <button
+                            onclick="verLibro('Historia de México')"
+                        >
+                            Ver libro
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LIBRO 8 -->
+
+                <article
+                    class="libro"
+                    data-nombre="Diccionario"
+                >
+
+                    <img
+                        src="dicci.jpg"
+                        alt="Diccionario"
+                    >
+
+                    <div class="libro-info">
+
+                        <h3>
+                            Diccionario
+                        </h3>
+
+                        <p>
+                            Consulta general
+                        </p>
+
+                        <button
+                            onclick="verLibro('Diccionario')"
+                        >
+                            Ver libro
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACTO ================= -->
+
+        <section id="contacto" class="contacto">
+
+            <div class="contenedor contacto-grid">
+
+
+                <div class="informacion">
+
+                    <h2>
+                        BIBLIOTECA
+                    </h2>
+
+                    <p>
+                        Un espacio para aprender,
+                        leer y descubrir nuevas historias.
+                    </p>
+
+                    <p>
+                        Lectura · Cultura · Conocimiento
+                    </p>
+
+                </div>
+
+
+                <!-- FORMULARIO -->
+
+                <div class="formulario">
+
+                    <h2>
+                        Contacto
+                    </h2>
+
+                    <form id="formularioContacto">
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            placeholder="Nombre"
+                            required
+                        >
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Correo electrónico"
+                            required
+                        >
+
+                        <textarea
+                            id="mensaje"
+                            placeholder="Escribe tu mensaje"
+                            required
+                        ></textarea>
+
+                        <button
+                            type="submit"
+                            class="boton"
+                        >
+                            Enviar mensaje
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <!-- REDES -->
+
+                <div class="redes">
+
+                    <h2>
+                        Síguenos
+                    </h2>
+
+                    <div class="redes-botones">
+
+                        <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                        >
+                            FB
+                        </a>
+
+                        <a
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                        >
+                            IG
+                        </a>
+
+                        <a
+                            href="https://www.youtube.com/"
+                            target="_blank"
+                        >
+                            YT
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Biblioteca Digital —
+            Todos los derechos reservados
+        </p>
+
+    </footer>
+
+
+    <!-- ================= MODAL ================= -->
+
+    <div id="modal" class="modal">
+
+        <div class="modal-contenido">
+
+            <button
+                class="cerrar"
+                onclick="cerrarModal()"
+            >
+                ×
+            </button>
+
+            <h2 id="modalTitulo">
+                Información
+            </h2>
+
+            <p id="modalTexto">
+                Información del libro.
+            </p>
+
+            <button
+                class="boton"
+                onclick="cerrarModal()"
+            >
+                Cerrar
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
